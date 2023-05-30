@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.home-page-container{
+    height: 100vh;  
+   
+}
+
+.home-page-image{
+    height: 45vw;   
+    background-image: url('https://w0.peakpx.com/wallpaper/173/355/HD-wallpaper-just-married-married-people-happiness-love-man-woman-couple.jpg');
+    background-position: inherit; 
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.time-line{
+height: 90vw;
+width: 90vw;
+background-color: rgb(254, 248, 240);
+
+}
+.time-line::before{
+    content: '';
+    display: block;
+    position: relative;
+    left: 50%;
+    height: 90vw;
+    width: 1px;
+    background-color: rgb(61, 61, 61);
+}
+.time-line-title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.time-line-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.time-line-box{
+
+}
+
+
+.boxes-father{
+    display: grid;
+    position: absolute;
+    top: 107%;
+    grid-template-columns: repeat(2,45vw);
+    grid-template-rows: repeat(2,45vw);
+}
+.box-details{
+    width: 40vw;
+    height: 45vw;
+}
+.right-pair{
+    margin-top: 15vw;
+}
