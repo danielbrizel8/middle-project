@@ -19,7 +19,7 @@
     align-items: center;
 }
 .time-line{
-height: 90vw;
+height: 100vw;
 width: 90vw;
 background-color: rgb(254, 248, 240);
 
@@ -29,7 +29,7 @@ background-color: rgb(254, 248, 240);
     display: block;
     position: relative;
     left: 50%;
-    height: 90vw;
+    height: 100vw;
     width: 1px;
     background-color: rgb(61, 61, 61);
 }
@@ -51,14 +51,35 @@ background-color: rgb(254, 248, 240);
 .boxes-father{
     display: grid;
     position: absolute;
-    top: 107%;
+    top: 120%;
     grid-template-columns: repeat(2,45vw);
     grid-template-rows: repeat(2,45vw);
 }
 .box-details{
     width: 40vw;
     height: 45vw;
+    
 }
 .right-pair{
     margin-top: 15vw;
+    display: flex;
+    justify-content: flex-end;
 }
+.image-time-line{
+    width: 40vw;
+    height: 30vw;
+}
+.content-time-line{
+    background-color: rgba(205, 187, 178, 0.765);
+    border-style: solid;
+    border-radius:10px ;
+    margin-top: 1vw;
+    margin-left: 1vw;
+}
+.button-link{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 2vw;
+    margin-bottom: 1vw;
+}
+
