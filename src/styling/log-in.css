@@ -1,11 +1,17 @@
-
-.containers-login{
+.containers-login {
     display: flex;
     position: relative;
-    top: 30vw;
+    justify-content: space-around;
+    margin-top: 1vw;
 }
 
-.login-container{
+.login-container {
+    width: 20vw;
+    height: 20vw;
+    background-color: aquamarine;
+    border-radius: 5%;
+}
+.sign-up-container {
     width: 40vw;
     height: 40vw;
     background-color: aquamarine;
