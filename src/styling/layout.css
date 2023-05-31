@@ -1,6 +1,7 @@
 *{
     margin: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 nav{
     display: flex;
@@ -11,6 +12,15 @@ nav{
     width: 100vw;
     font-size: 1.2rem;
     z-index: 3;
+}
+
+.image-logo{
+  width: 17vw;
+  height: 6vw;
+  margin-top: 7px;
+  margin-left: 20px;
+  margin-bottom: 5px;
+  object-fit: fill;
 }
 
 .link{
