@@ -1,0 +1,11 @@
+
+.create-event-form{
+    position: relative;
+    top: 10vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.names-couple{
+    display: flex;
+}
