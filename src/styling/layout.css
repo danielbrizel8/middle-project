@@ -7,10 +7,9 @@ nav{
     justify-content: space-between;
     align-items: center;
     background-color: rgba(56, 55, 55, 0.747);
-    height: 100px;
+    height: 7vw;
     width: 100vw;
     font-size: 1.2rem;
-    position: fixed;
     z-index: 3;
 }
 

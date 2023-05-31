@@ -1,0 +1,40 @@
+{
+    "users": [
+        {
+            "userName": "john123",
+            "password": "password123"
+        },
+        {
+            "userName": "emma1987",
+            "password": "hello123"
+        },
+        {
+            "userName": "alex_smith",
+            "password": "pass1234"
+        },
+        {
+            "userName": "sarah85",
+            "password": "qwerty567"
+        },
+        {
+            "userName": "mike_jones",
+            "password": "abcd9876"
+        },
+        {
+            "userName": "lily_jackson",
+            "password": "p@ssw0rd"
+        },
+        {
+            "userName": "max1990",
+            "password": "test123"
+        },
+        {
+            "userName": "amy_roberts",
+            "password": "password1"
+        },
+        {
+            "userName": "david92",
+            "password": "securepwd"
+        }
+    ]
+}
