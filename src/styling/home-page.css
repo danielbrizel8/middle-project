@@ -18,6 +18,18 @@
     justify-content: center;
     align-items: center;
 }
+
+.image-text{
+    font-family: 'Alkatra', cursive;
+    font-size: 1rem;
+    text-shadow: 0px 0px 100px rgb(50, 50, 50);
+    color: white;
+}
+.image-text > h1{
+    display: flex;
+    justify-content: center;
+}
+
 .time-line{
 height: 100vw;
 width: 90vw;
@@ -37,14 +49,13 @@ background-color: rgb(254, 248, 240);
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 30px;
+    
 }
 .time-line-container{
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-.time-line-box{
-
 }
 
 
@@ -75,11 +86,61 @@ background-color: rgb(254, 248, 240);
     border-radius:10px ;
     margin-top: 1vw;
     margin-left: 1vw;
+    height: fit-content;
+
 }
+
+.content-title{
+    padding-left: 5px;
+}
+
+.content-paragraph{
+    padding-left: 5px;
+}
+
 .button-link{
     display: flex;
-    justify-content: flex-end;
-    margin-right: 2vw;
-    margin-bottom: 1vw;
+    justify-content: end;
+}
+
+
+.link-more{
+    text-decoration: none;
+    color: black;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    width: 5vw;
+    height: 5vh;
+    border-style: solid;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.link-more:hover{
+    background-color: rgb(254, 248, 240);
+}
+
+.image-couple{
+    width: 8vw;
+    height: 9vw;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.about-us-section{
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+.about-us-content{
+    width: 70vw;
+    height: 10vw;
+    border-style: solid;
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 10px;
 }
 
