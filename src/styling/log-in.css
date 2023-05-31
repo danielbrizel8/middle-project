@@ -1,0 +1,13 @@
+
+.containers-login{
+    display: flex;
+    position: relative;
+    top: 30vw;
+}
+
+.login-container{
+    width: 40vw;
+    height: 40vw;
+    background-color: aquamarine;
+    border-radius: 5%;
+}
