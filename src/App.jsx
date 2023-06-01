@@ -13,6 +13,7 @@ import CalendarComponent from './components/Calendar'
 
 
 const weddingDetailsObj = {
+  userName: localStorage.getItem('user'),
   husbandName: '',
   wifeName: '',
   weddingDate: ''

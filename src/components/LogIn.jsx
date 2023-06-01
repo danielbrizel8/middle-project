@@ -20,7 +20,7 @@ function LogIn() {
     const checkUser = usersData?.find((user) => user.userName == userName)
     if (checkUser != undefined) {
       if (checkUser.password == password) {
-
+        localStorage.setItem("user" , userName)
         navigate('/HomePage')
       }
     }
