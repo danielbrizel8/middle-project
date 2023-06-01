@@ -4,17 +4,7 @@ import '../styling/layout.css'
 import Logo from './../assets/logo.png'
 
 
-function Layout() {
-    const targetRef= useRef(null)
-    const handleClick= ()=> {
-       
-        if(targetRef.current) {
-            targetRef.current.click();
-            window.scrollTo(0,3000)
-        }
-    }
-
-	
+function Layout() {	
     return (
         <div>
             <nav className='nav-bar'>
