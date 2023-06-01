@@ -17,6 +17,7 @@ function CreateEvent() {
     setWeddingDetails(
       {
         ...weddingDetails,
+        userName: localStorage.getItem('user'),
         husbandName: spouse,
         wifeName: partner,
       }

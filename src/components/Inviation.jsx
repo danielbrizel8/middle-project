@@ -7,6 +7,10 @@ import { useContext, useState } from 'react'
 
 function Inviation() {
   const { weddingDetails } = useContext(CreateEventContext)
+  const localData = JSON.parse(localStorage.getItem('weddings'))
+  const currentUser = localStorage.getItem('user')
+  const currentWedding = localData.findLast((obj) => obj.userName == currentUser)
+  console.log(currentWedding);
   return (
     <div className="invitation-form">
       <div className='main-container'>
@@ -14,12 +18,12 @@ function Inviation() {
           <h2>we invite you to celebrate our wedding</h2>
           <div className='heart-bg'> <img src={Heart} alt="" style={{position:"absolute",height:"26vw",width:"33vw",top:"15vw",left:"11vw"}} />
             <div className='main-part'>
-              <h1>{`${weddingDetails.husbandName} & ${weddingDetails.wifeName}`} </h1>
+              <h1>{`${currentWedding.husbandName} & ${currentWedding.wifeName}`} </h1>
             </div>
           </div>
 
           <div className='details'>
-            <h2>Date: {weddingDetails.weddingDate}</h2>
+            <h2>Date: {currentWedding.weddingDate}</h2>
             <h2>place: Gan Eden</h2>
             <h2>Address: Shaked 2</h2>
             <h2>At: 19:00</h2>
@@ -35,7 +39,7 @@ function Inviation() {
           <p> Party- 21:30</p>
           <p>We look forward to celebrating this joyous occasion with you.</p>
           <p>With love,</p>
-          <p>{weddingDetails.husbandName} & {weddingDetails.wifeName}</p>
+          <p>{currentWedding.husbandName} & {currentWedding.wifeName}</p>
         </div>
       </div>
     </div>

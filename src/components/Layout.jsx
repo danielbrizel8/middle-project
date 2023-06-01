@@ -4,7 +4,10 @@ import '../styling/layout.css'
 import Logo from './../assets/logo.png'
 
 
+
 function Layout() {	
+
+
     return (
         <div>
             <nav className='nav-bar'>
