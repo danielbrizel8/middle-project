@@ -20,12 +20,12 @@ function LogIn() {
     const checkUser = usersData?.find((user) => user.userName == userName)
     if (checkUser != undefined) {
       if (checkUser.password == password) {
-        console.log("yeah");
+
         navigate('/HomePage')
       }
     }
     else{
-      console.log(no);
+      console.log('no');
     }
     console.log(checkUser);
   }
