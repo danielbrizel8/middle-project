@@ -90,7 +90,7 @@ function HomePage() {
           <div className='about-us-section'>
             <h1>About- us</h1>
           </div>
-          <div className='about-us-content'>
+          <div className='about-us-content' id='about-us-content'>
             <h2>Welcome to "Gan Eden", where unforgettable memories are made. With 20 years of experience, we are dedicated to providing an exceptional wedding experience. Our elegant venue, personalized service, and attention to detail ensure your special day is truly magical. Let us be part of your love story and create an extraordinary celebration at "Gan Eden".</h2>
           </div>
         </div>
