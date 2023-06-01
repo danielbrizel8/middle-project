@@ -1,0 +1,104 @@
+  @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Great+Vibes&display=swap');
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+
+.invitation-form{
+    height: 50vw;
+    background-color: rgb(254, 248, 240);
+}
+
+.main-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    
+}
+
+.heart-bg{
+    /* background-image: url('../assets/heart-back-removebg-preview.png'); */
+    background-repeat: no-repeat;
+    /* width: 15vw;
+    height: 15vw; */
+    background-size: contain;
+    display: flex;
+    justify-content: center;
+
+}
+
+.front-side{
+    border-style: solid;
+    border-color: white;
+    background-color: white;
+    height: 40vw;
+    width: 35vw;
+    margin-top: 10vh;
+    box-shadow: 10px 10px 8px 5px #888888;
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    flex-direction: column;
+    background-image: url("https://media.istockphoto.com/id/917171252/photo/eucalyptus-leaves-on-white-background-flat-lay-top-view.jpg?s=612x612&w=0&k=20&c=-YrxM5YFxVQOi_3RIeqBorvQQS04Afz4pMuTeLEvzdM=");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.front-side> h2{
+    color: black;
+    font-family: 'Architects Daughter';
+   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5) ;
+   margin-top: 1vw;
+}
+
+.main-part{
+    margin-top: 2vw;
+    margin-bottom: 2vw;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+
+.main-part> h1{
+    font-size: 3.5rem;
+    font-family: 'Great Vibes';
+}
+
+.main-part> h2{
+    font-size: 3.5rem;
+    font-family: 'Architects Daughter';
+}
+
+.details{
+    height: 8vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    font-family: 'Architects Daughter';
+    margin-bottom: 1vw;
+}
+
+.back-side{
+    border-style: solid;
+    border-color: white;
+    background-color: white;
+    height: 40vw;
+    width: 35vw;
+    margin-top: 10vh;
+    box-shadow: 10px 10px 8px 5px #888888;
+    display: flex;
+    text-align: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    background-image: url("https://img.freepik.com/premium-vector/watercolor-eucalyptus-leaves-frame_158232-177.jpg?w=360");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.back-side> p{
+    font-size: 1.5rem;
+}
