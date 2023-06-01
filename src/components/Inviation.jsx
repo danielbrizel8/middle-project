@@ -1,5 +1,6 @@
 import React from 'react'
 import './../styling/inviation.css'
+import Heart from '../assets/heart-back-removebg-preview.png'
 
 import { CreateEventContext } from './../CreateEventContext'
 import { useContext, useState } from 'react'
@@ -8,28 +9,35 @@ function Inviation() {
   const { weddingDetails } = useContext(CreateEventContext)
   return (
     <div className="invitation-form">
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      
-      <h2>Wedding Invitation</h2>
-      <p>Dear friends and family,</p>
-      <p>We are thrilled to invite you to the wedding celebration of</p>
-      <h3>{weddingDetails.husbandName} & {weddingDetails.wifeName}</h3>
-      <p>Date: {weddingDetails.weddingDate}</p>
-      <p>Place: Doria</p>
-      <p>Address: Shaked 2</p>
-      <p>Time:</p>
-      <p>19:00 - Welcoming</p>
-      <p>20:00 - Ceremony</p>
-      <p>20:30 - Dinner</p>
-      <p>We look forward to celebrating this joyous occasion with you.</p>
-      <p>Please kindly RSVP by the provided date.</p>
-      <p>With love,</p>
-      <p>{weddingDetails.husbandName} & {weddingDetails.wifeName}</p>
+      <div className='main-container'>
+        <div className='front-side'>
+          <h2>we invite you to celebrate our wedding</h2>
+          <div className='heart-bg'> <img src={Heart} alt="" style={{position:"absolute",height:"26vw",width:"33vw",top:"15vw",left:"11vw"}} />
+            <div className='main-part'>
+              <h1>{`${weddingDetails.husbandName} & ${weddingDetails.wifeName}`} </h1>
+            </div>
+          </div>
+
+          <div className='details'>
+            <h2>Date: {weddingDetails.weddingDate}</h2>
+            <h2>place: Gan Eden</h2>
+            <h2>Address: Shaked 2</h2>
+            <h2>At: 19:00</h2>
+          </div>
+        </div>
+
+
+        <div className='back-side'>
+          <h1>Schedule:</h1>
+          <p>Welcoming- 19:00</p>
+          <p> Ceremony- 20:00</p>
+          <p> Dinner- 20:30</p>
+          <p> Party- 21:30</p>
+          <p>We look forward to celebrating this joyous occasion with you.</p>
+          <p>With love,</p>
+          <p>{weddingDetails.husbandName} & {weddingDetails.wifeName}</p>
+        </div>
+      </div>
     </div>
   )
 }
