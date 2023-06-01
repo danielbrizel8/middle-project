@@ -17,8 +17,12 @@ const weddingDetailsObj = {
   wifeName: '',
   weddingDate: ''
 }
-const arrayOfUsers = [];
-localStorage.setItem("users", JSON.stringify(arrayOfUsers));
+if(!localStorage.getItem('weddings'))
+{
+const arrayOfWedding = [];
+localStorage.setItem("weddings", JSON.stringify(arrayOfWedding));
+}
+
 
 
 function App() {
