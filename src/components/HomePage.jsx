@@ -30,7 +30,7 @@ function HomePage() {
                   <h1 className='content-title'>Pick Your Date</h1>
                   <h3 className='content-paragraph'>Selecting your dream wedding date is made easy with our interactive tools. Explore venue availability, consider seasonal factors, and ensure a conflict-free celebration. </h3>
                   <div className='button-link'>
-                    <Link className='link-more' to={'Calendar'}>Available Dates</Link>
+                    <Link className='link-more' to={'/Calendar'}>Available Dates</Link>
                   </div>
                 </div>
               </div>
@@ -44,7 +44,7 @@ function HomePage() {
                   <h1 className='content-title'>Let's Get Married</h1>
                   <h3 className='content-paragraph'>Start your journey to a perfect wedding day with us. Our seamless planning tools and expert team make it effortless to bring your dream wedding to life. From venue selection to personalized details, let us guide you every step of the way towards a magical celebration of love at "Gan Eden". </h3>
                   <div className='button-link'>
-                    <Link className='link-more' to={'CreateEvent'}>Create Event</Link>
+                    <Link className='link-more' to={'/CreateEvent'}>Create Event</Link>
                   </div>
                 </div>
               </div>
@@ -60,7 +60,7 @@ function HomePage() {
                   <h1 className='content-title'>Our Deals</h1>
                   <h3 className='content-paragraph'>Discover extraordinary wedding deals at "Gan Eden". From all-inclusive packages to customizable options, our exclusive offers cater to your unique preferences and budget. Choose us for Createing unforgettable memories while enjoying exceptional value. </h3>
                   <div className='button-link'>
-                    <Link className='link-more' to={'Packages'}>More</Link>
+                    <Link className='link-more' to={'/Packages'}>More</Link>
                   </div>
                 </div>
               </div>
@@ -76,7 +76,7 @@ function HomePage() {
                   <h1 className='content-title'>Send Inviation</h1>
                   <h3 className='content-paragraph'>Join us and you can see how your wedding invitation will look like. </h3>
                   <div className='button-link'>
-                    <Link className='link-more' to={'Inviation'}>View Inviation</Link>
+                    <Link className='link-more' to={'/Inviation'}>View Inviation</Link>
                   </div>
                 </div>
               </div>

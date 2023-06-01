@@ -28,10 +28,10 @@ function App() {
   return (
     <CreateEventContext.Provider value={{ weddingDetails, setWeddingDetails}}>
       <Routes>
+      <Route index element={<LogIn />}></Route>
         <Route path='/' element={<Layout />}>
-          <Route index element={<HomePage />}></Route>
+          <Route path='HomePage' element={<HomePage />}></Route>
           <Route path='Calendar' element={<CalendarComponent />}></Route>
-          <Route path='LogIn' element={<LogIn />}></Route>
           <Route path='CreateEvent' element={<CreateEvent />}></Route>
           <Route path='Inviation' element={<Inviation />}></Route>
           <Route path='Packages' element={<Packages />}></Route>
