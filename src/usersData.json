@@ -37,6 +37,14 @@
             "password": "securepwd"
         },
         {
+            "userName": "amit",
+            "password": "amit"
+        },
+        {
+            "userName": "daniel",
+            "password": "daniel"
+        },
+        {
             "userName": "1",
             "password": "1"
         }
