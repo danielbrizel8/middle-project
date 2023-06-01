@@ -1,19 +1,38 @@
-.containers-login {
-    display: flex;
-    position: relative;
-    justify-content: space-around;
-    margin-top: 1vw;
-}
 
 .login-container {
-    width: 20vw;
-    height: 20vw;
-    background-color: aquamarine;
-    border-radius: 5%;
+    height: 100vh;
+    background-image: url('./../assets/rose.jpg');
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
-.sign-up-container {
-    width: 40vw;
-    height: 40vw;
-    background-color: aquamarine;
-    border-radius: 5%;
+.title-login{
+    text-align: center;
+}
+.inputs-login{
+    display: flex;
+    justify-content: space-around;
+}
+.login-input{
+    width: 18vw;
+}
+.button-login{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.log-in-box{
+    background: linear-gradient(135deg, rgba(255,255,255,0.1), rgba(255, 255, 255, 0));
+    -webkit-backdrop-filter: blur(26px);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 8px 32px 0 rgba(0, 0,0 , 0.37);
+    border: 1px solid rgba(255,255,255.0.18);
+    border-radius: 32px;
+    height: 25vw;
+    width: 45vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }

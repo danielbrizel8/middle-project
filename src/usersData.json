@@ -35,6 +35,10 @@
         {
             "userName": "david92",
             "password": "securepwd"
+        },
+        {
+            "userName": "1",
+            "password": "1"
         }
     ]
 }
