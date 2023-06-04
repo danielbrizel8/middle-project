@@ -1,29 +1,38 @@
-.gift-container{
-    height: 100vh;
+.gift-container {
+    height: 100vw;
     display: flex;
-    align-items: center;
+    /* align-items: center; */
     justify-content: space-around;
+    background-color: rgb(254, 248, 240);
+
 }
-.chose-wedding-box{
+
+.chose-wedding-box {
     height: 40vw;
     width: 40vw;
-    background-color: aqua;
+    margin-top: 4vw;
+    background: linear-gradient(135deg, rgba(255,255,255, 0.1), rgba(255,255,255, 0));
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius: 32px;
+    display: flex;
+    justify-content: center;
 }
 
-.credit-card-inputs{
+.credit-card-inputs {
     width: 40vw;
-    height: 40vw;
-    
+    height: 27vw;
 }
 
-.credit-card-box{
-display: flex;
-flex-direction: column;
-align-items: center;
-margin-top: 10vw;
+.credit-card-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.credit-card{
+.credit-card {
     width: 38vw;
     height: 22vw;
     background-image: url('./../assets/credit-card.png');
@@ -38,20 +47,23 @@ margin-top: 10vw;
     top: 5vw;
 
 }
-.number-card{
+
+.number-card {
     display: flex;
     margin-top: 8vw;
     font-size: 2.3vw;
     width: 100%;
     justify-content: space-around;
 }
-.ex-date{
+
+.ex-date {
     position: relative;
     bottom: -1vw;
     display: flex;
     justify-content: center;
 }
-.card-holder{
+
+.card-holder {
     display: flex;
     width: 100%;
     font-size: 2vw;
@@ -60,7 +72,7 @@ margin-top: 10vw;
     right: -2vw;
 }
 
-.inputs-box{
+.inputs-box {
     margin-top: 7vw;
     margin-left: 1vw;
     height: 12vw;
@@ -68,13 +80,144 @@ margin-top: 10vw;
     flex-direction: column;
     justify-content: space-around;
 }
-.short-input-card{
+.date-wedding-select{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.short-input-card {
     display: flex;
 }
-.exp-date-input{
+
+.exp-date-input {
     width: 8vw;
 }
-.cvc-number{
+
+.cvc-number {
     width: 5vw;
     margin-left: 1vw;
 }
+.end-pay-button{
+    cursor: pointer;
+    margin-left: 5vw;
+    width: 4vw;
+    height: 2vw;
+    border-radius: 10px;
+    background-color: green;
+    color: white;
+    border-style: none;
+    /* transition: 0.5s; */
+}
+.end-pay-button:hover{
+    border-style: solid;
+    border-color: white;
+    transform: scale(1.2);
+}
+.checked-button{
+    cursor: pointer;
+}
+
+.form-chose-wedding {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+}
+.date-lable{
+    font-family: 'Alkatra', cursive;
+    font-size: x-large;
+}
+
+.open-after-date {
+    height: 30vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.input-none{
+    display: none;
+}
+
+
+
+
+
+
+
+.pay-button{
+    display: flex;
+    justify-content: center;
+}
+
+.Btn {
+    width: 130px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(15, 15, 15);
+    border: none;
+    color: white;
+    font-weight: 600;
+    gap: 8px;
+    cursor: pointer;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.103);
+    position: relative;
+    overflow: hidden;
+    transition-duration: .3s;
+}
+
+.svgIcon {
+    width: 16px;
+}
+
+.svgIcon path {
+    fill: white;
+}
+
+.Btn::before {
+    width: 130px;
+    height: 130px;
+    position: absolute;
+    content: "";
+    background-color: white;
+    border-radius: 50%;
+    left: -100%;
+    top: 0;
+    transition-duration: .3s;
+    mix-blend-mode: difference;
+}
+
+.Btn:hover::before {
+    transition-duration: .3s;
+    transform: translate(100%, -50%);
+    border-radius: 0;
+}
+
+.Btn:active {
+    transform: translate(5px, 5px);
+    transition-duration: .3s;
+}
+
+
+@media screen and (max-width: 780px) {
+    .gift-container {
+        display: grid;
+        grid-template-rows: repeat(2,1fr);
+    }
+    .chose-wedding-box {
+        height: 500px;
+        width: 500px;
+        background: linear-gradient(135deg, rgba(255,255,255, 0.1), rgba(255,255,255, 0));
+        -webkit-backdrop-filter: blur(20px);
+        backdrop-filter: blur(20px);
+        box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+        border: 1px solid rgba(255, 255, 255, 0.18);
+        border-radius: 32px;
+        display: flex;
+        justify-content: center;
+    }
+    
+
+  }
