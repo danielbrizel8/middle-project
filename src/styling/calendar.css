@@ -3,9 +3,15 @@
   }
 
   .clendar-title{
-    color: aquamarine;
+    color: black;
+    text-align: center;
+    margin-bottom: 2vw;
   }
 
   .calendar-size{
     width: 100vw;
+  }
+  .calendar-container{
+    height: 100vh;
+    background-color: rgb(254, 248, 240);
   }
