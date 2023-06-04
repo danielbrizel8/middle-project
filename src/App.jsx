@@ -16,7 +16,7 @@ const weddingDetailsObj = {
   userName: localStorage.getItem('user'),
   husbandName: '',
   wifeName: '',
-  weddingDate: ''
+  weddingDate: '',
 }
 if(!localStorage.getItem('weddings'))
 {

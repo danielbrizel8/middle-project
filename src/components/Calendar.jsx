@@ -48,6 +48,7 @@ function CalendarComponent() {
       <h1 className='clendar-title'>Calendar</h1>
       <Calendar
         className={'calendar-size'}
+        locale="en-GB"
         tileContent={tileContent}
         tileDisabled={({ date }) => test.includes(date.toISOString().split('T')[0])}
         onClickDay={(day) => saveDate(day)}

@@ -9,6 +9,8 @@ function CreateEvent() {
   const [spouse, setSpouse] = useState()
   const [partner, setPartner] = useState()
   const [updateDate, setUpdateDate] = useState()
+  const [saveData, setSaveData] = useState(false)
+  const [removeSaveData, setRemoveSaveData] = useState(false)
   const [saveDatesArray, setSaveDatesArray] = useState(localStorage.getItem('dates'))
   const { weddingDetails, setWeddingDetails } = useContext(CreateEventContext)
   const navigate = useNavigate()
@@ -23,17 +25,20 @@ function CreateEvent() {
       }
 
     )
-   
+    setTimeout(() => {
+      setSaveData(true);
+      setRemoveSaveData(true)
+    }, 1000);
+
 
   }
 
-  const testhand = () => {
+  const handleNavigate = () => {
     console.log(weddingDetails);
     const localData = JSON.parse(localStorage.getItem('weddings'))
     localData.push(weddingDetails)
     localStorage.setItem("weddings", JSON.stringify(localData));
     console.log(localData);
-
     navigate('/Inviation')
 
   }
@@ -53,20 +58,35 @@ function CreateEvent() {
     <div className="form-container">
       <div className='create-event-form'>
         <div className='names-couple'>
-          <TextField label="Husband name" onChange={(e) => {setSpouse(e.target.value) }} />
-          <TextField label="Wife name" onChange={(e) => { setPartner(e.target.value) }} />
+          <TextField className='responsive-input' label="Spouse name" onChange={(e) => { setSpouse(e.target.value) }} />
+          <TextField className='responsive-input' label="Partner name" onChange={(e) => { setPartner(e.target.value) }} />
         </div>
         <br />
         <div className="date-event">
-          <TextField
-            value={updateDate}
-            InputProps={{
-              readOnly: true,
-            }} />
+          <div className="chose-date-input">
+            <InputLabel>Chosen Date</InputLabel>
+            <TextField
+              className='responsive-input'
+              value={updateDate}
+              InputProps={{
+                readOnly: true,
+              }} />
+          </div>
+          <div className="link-to-chose-date">
+            <Link to={'/Calendar'}> still not chose date? </Link>
+          </div>
+
         </div>
-        <button onClick={handleDateSave}>save</button>
-        <button onClick={testhand}> huii </button>
-        <Link to={'/Inviation'}>invation</Link>
+        <div className="buttons-container">
+         { !removeSaveData && <button className='save-button' onClick={handleDateSave}>Save</button> }
+          {saveData && <button onClick={handleNavigate} class="cta">
+            <span>To Invation</span>
+            <svg viewBox="0 0 13 10" height="10px" width="15px">
+              <path d="M1,5 L11,5"></path>
+              <polyline points="8 1 12 5 8 9"></polyline>
+            </svg>
+          </button>}
+        </div>
       </div>
 
 
