@@ -41,11 +41,11 @@ function CalendarComponent() {
 
 
   return (
-    <div>
+    <div  className='calendar-container'>
       <br />
       <br />
       <br></br>
-      <h1 className='clendar-title'>Calendar</h1>
+      <h1 className='clendar-title'>Available Dates</h1>
       <Calendar
         className={'calendar-size'}
         locale="en-GB"

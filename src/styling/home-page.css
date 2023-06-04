@@ -8,6 +8,18 @@
 
 }
 
+.left-pair::after{
+  content: '';
+  display: block;
+  position: relative;
+  width: 5vw;
+  height: 0.1vw;
+  background-color: black;
+  bottom: 40%;
+  left:89%;
+ 
+}
+
 .home-page-image {
     height: 45vw;
     background-image: url('https://w0.peakpx.com/wallpaper/173/355/HD-wallpaper-just-married-married-people-happiness-love-man-woman-couple.jpg');
@@ -88,6 +100,18 @@
     justify-content: flex-end;
 }
 
+.right-pair-line::before{
+  content: '';
+  display: block;
+  position: relative;
+  width: 5vw;
+  height: 0.1vw;
+  background-color: black;
+  bottom: -50%;
+  right:0%;
+ 
+}
+
 .image-time-line {
     width: 40vw;
 }
@@ -128,6 +152,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    text-align: center;
 }
 
 .link-more:hover {

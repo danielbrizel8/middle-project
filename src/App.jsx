@@ -36,6 +36,7 @@ function App() {
       <Route index element={<LogIn />}></Route>
         <Route path='/' element={<Layout />}>
           <Route path='HomePage' element={<HomePage />}></Route>
+          <Route path='HomePage/about' element={<HomePage />}></Route>
           <Route path='Calendar' element={<CalendarComponent />}></Route>
           <Route path='CreateEvent' element={<CreateEvent />}></Route>
           <Route path='Inviation' element={<Inviation />}></Route>

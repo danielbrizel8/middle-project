@@ -97,3 +97,12 @@ nav{
     background: transparent;
   }
 
+#hello-user{
+  color: white;
+  display: flex;
+  align-items: center;
+}
+
+#hello-user> img{
+  margin-right: 0.5vw;
+}
