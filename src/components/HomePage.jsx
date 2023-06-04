@@ -1,6 +1,7 @@
 import React from 'react'
 import './../styling/home-page.css'
 import { Link } from 'react-router-dom'
+import Carousle from './Carousle'
 
 function HomePage() {
   return (
@@ -86,15 +87,24 @@ function HomePage() {
         <div>
           <img className='image-couple' src="https://easy2give.co.il/media/images/married-icon.original.png" alt="" />
         </div>
-        <div>
-          <div className='about-us-section'>
+        <div className='about-us-section'>
+          <div className='about-us-header'>
             <h1>About- us</h1>
           </div>
           <div className='about-us-content' id='about-us-content'>
             <h2>Welcome to "Gan Eden", where unforgettable memories are made. With 20 years of experience, we are dedicated to providing an exceptional wedding experience. Our elegant venue, personalized service, and attention to detail ensure your special day is truly magical. Let us be part of your love story and create an extraordinary celebration at "Gan Eden".</h2>
           </div>
         </div>
-        <button id='top-button' onClick={()=>window.scrollTo(0,0)}>
+        <div style={{ maxWidth: 1200, marginLeft: 'auto', marginRight: 'auto', marginTop: 64 }}>
+          <Carousle>
+            <img src="https://www.agadat-deshe.co.il/warehouse/dynamic/274797.jpg" alt="" />
+            <img src="https://www.myday.co.il/wp-content/blogs.dir/2/files/2017/09/DSC_7489-117-1.jpg" alt="" />
+            <img src="https://ein-hemed.co.il/wp-content/uploads/2023/01/AAA_7048.jpg" alt="" />
+            <img src="https://www.easywed.co.il/wp-content/uploads/2019/11/O4A4646-1.jpg" alt="" />
+            <img src="https://www.kellysweet.com/wp-content/uploads/2020/05/Detroit-Michigan-wedding-photographer_59.jpg" alt="" />
+          </Carousle>
+        </div>
+        <button id='top-button' onClick={() => window.scrollTo(0, 0)}>
           <div className="text">
             <span>Back</span>
             <span>to</span>
