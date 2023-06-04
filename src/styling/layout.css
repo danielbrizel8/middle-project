@@ -9,7 +9,7 @@ nav{
     align-items: center;
     background-color: rgba(56, 55, 55, 0.747);
     height: 7vw;
-    width: 100vw;
+    width:100%;
     font-size: 1.2rem;
     z-index: 3;
 }
@@ -49,7 +49,7 @@ nav{
   } */
 
   .link {
-    width: 140px;
+    
     height: auto;
     float: left;
     transition: .5s linear;

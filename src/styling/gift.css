@@ -1,0 +1,80 @@
+.gift-container{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.chose-wedding-box{
+    height: 40vw;
+    width: 40vw;
+    background-color: aqua;
+}
+
+.credit-card-inputs{
+    width: 40vw;
+    height: 40vw;
+    
+}
+
+.credit-card-box{
+display: flex;
+flex-direction: column;
+align-items: center;
+margin-top: 10vw;
+}
+
+.credit-card{
+    width: 38vw;
+    height: 22vw;
+    background-image: url('./../assets/credit-card.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 5%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    top: 5vw;
+
+}
+.number-card{
+    display: flex;
+    margin-top: 8vw;
+    font-size: 2.3vw;
+    width: 100%;
+    justify-content: space-around;
+}
+.ex-date{
+    position: relative;
+    bottom: -1vw;
+    display: flex;
+    justify-content: center;
+}
+.card-holder{
+    display: flex;
+    width: 100%;
+    font-size: 2vw;
+    position: relative;
+    bottom: -2.5vw;
+    right: -2vw;
+}
+
+.inputs-box{
+    margin-top: 7vw;
+    margin-left: 1vw;
+    height: 12vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.short-input-card{
+    display: flex;
+}
+.exp-date-input{
+    width: 8vw;
+}
+.cvc-number{
+    width: 5vw;
+    margin-left: 1vw;
+}

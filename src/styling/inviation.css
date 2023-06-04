@@ -42,7 +42,7 @@
     text-align: center;
     justify-content: space-between;
     flex-direction: column;
-    background-image: url("https://media.istockphoto.com/id/917171252/photo/eucalyptus-leaves-on-white-background-flat-lay-top-view.jpg?s=612x612&w=0&k=20&c=-YrxM5YFxVQOi_3RIeqBorvQQS04Afz4pMuTeLEvzdM=");
+    /* background-image: url("https://media.istockphoto.com/id/917171252/photo/eucalyptus-leaves-on-white-background-flat-lay-top-view.jpg?s=612x612&w=0&k=20&c=-YrxM5YFxVQOi_3RIeqBorvQQS04Afz4pMuTeLEvzdM="); */
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }
@@ -97,6 +97,10 @@
     background-image: url("https://img.freepik.com/premium-vector/watercolor-eucalyptus-leaves-frame_158232-177.jpg?w=360");
     background-repeat: no-repeat;
     background-size: 100% 100%;
+}
+.download-div{
+    display: flex;
+    justify-content: center;
 }
 
 .back-side> p{
