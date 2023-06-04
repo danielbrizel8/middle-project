@@ -9,7 +9,7 @@ function Layout() {
 
 
     return (
-        <div>
+         <div>
             <nav className='nav-bar'>
                <Link className='logo' to={"HomePage"}><img className='image-logo' src={Logo} alt="" /> </Link>
                 <Link className='link' to={"/LogIn"}>Log-in</Link>
@@ -21,6 +21,8 @@ function Layout() {
             </nav>
             <Outlet />
         </div>
+        
+  
 
     )
 }

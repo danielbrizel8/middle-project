@@ -2,13 +2,13 @@
 .login-container {
     height: 100vh;
     background-size: cover;
-    background-image: url('./../assets/rose.jpg');
+    background-image: url('./../assets/login10.avif');
     background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-size: cover;
+    background-size: 100% 100%;
 }
 .title-login{
     text-align: center;
@@ -20,11 +20,82 @@
 .login-input{
     width: 18vw;
 }
+
+.error-message{
+  margin-bottom: 5vw;
+  margin-left: 2.5vw;
+  font-size: 1.1rem;
+}
 .button-login{
     display: flex;
     align-items: center;
     justify-content: center;
 }
+.sign-in-button{
+    border-radius: 10px;
+    margin-bottom: 1vw;
+    height: 3vw;
+    width: fit-content;
+}
+.sign-in-button {
+    --primary-color: #8d926e;
+    --secondary-color: #fff;
+    --hover-color: #5c7059;
+    --arrow-width: 10px;
+    --arrow-stroke: 2px;
+    box-sizing: border-box;
+    border: 0;
+    border-radius: 20px;
+    color: var(--secondary-color);
+    padding: 1em 1.8em;
+    background: var(--primary-color);
+    display: flex;
+    transition: 0.2s ;
+    align-items: center;
+    gap: 0.6em;
+    font-weight: bold;
+  }
+  
+  .sign-in-button .arrow-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .sign-in-button .arrow {
+    margin-top: 1px;
+    width: var(--arrow-width);
+    background: var(--primary-color);
+    height: var(--arrow-stroke);
+    position: relative;
+    transition: 0.2s;
+  }
+  
+  .sign-in-button .arrow::before {
+    content: "";
+    box-sizing: border-box;
+    position: absolute;
+    border: solid var(--secondary-color);
+    border-width: 0 var(--arrow-stroke) var(--arrow-stroke) 0;
+    display: inline-block;
+    top: -3px;
+    right: 3px;
+    transition: 0.2s;
+    padding: 3px;
+    transform: rotate(-45deg);
+  }
+  
+  .sign-in-button:hover {
+    background-color: var(--hover-color);
+  }
+  
+  .sign-in-button:hover .arrow {
+    background: var(--secondary-color);
+  }
+  
+  .sign-in-button:hover .arrow:before {
+    right: 0;
+  }
 .log-in-box{
     background: linear-gradient(135deg, rgba(255,255,255,0.1), rgba(255, 255, 255, 0));
     -webkit-backdrop-filter: blur(26px);
@@ -38,3 +109,5 @@
     flex-direction: column;
     justify-content: space-between;
 }
+
+
