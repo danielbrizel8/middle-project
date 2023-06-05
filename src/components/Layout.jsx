@@ -6,28 +6,28 @@ import Logo from './../assets/logo.png'
 
 
 function Layout() {
-    const [openNav, setOpenNav] = useState(false)
+  const [openNav, setOpenNav] = useState(false)
 
-    return (
-        <div className='layout-container'>
-            <div>
-                <nav className='nav-bar'>
-                    <Link className='logo' to={"HomePage"}><img className='image-logo' src={Logo} alt="" /> </Link>
-                    <div id='hello-user'>
-                        <img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/newlyweds.png" alt="newlyweds" />
-                        <div  >Hello {localStorage.getItem('user')}</div>
-                    </div>
-                    <Link id='about-us-none' className='link' to={"HomePage/about"} >About- us</Link>
-                    <Link className='link' to={'/Calendar'}>Available Dates</Link>
-                    <Link id='create-event-none' className='link' to={'/CreateEvent'}>Create Event</Link>
-                    <Link id='our-deals-none' className='link' to={'/Packages'}>Our Deals</Link>
-                    <Link className='link' to={"/Gift"}>Online Gift</Link>
-                </nav>
-            </div>
-            <div>
-                <Outlet />
-            </div>
-            <div className="footer">
+  return (
+    <div className='layout-container'>
+      <div>
+        <nav className='nav-bar'>
+          <Link className='logo' to={"HomePage"}><img className='image-logo' src={Logo} alt="" /> </Link>
+          <div id='hello-user'>
+            <img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/newlyweds.png" alt="newlyweds" />
+            <div  >Hello {localStorage.getItem('user')}</div>
+          </div>
+          <Link id='about-us-none' className='link' to={"HomePage/about"} >About- us</Link>
+          <Link className='link' to={'/Calendar'}>Available Dates</Link>
+          <Link id='create-event-none' className='link' to={'/CreateEvent'}>Create Event</Link>
+          <Link id='our-deals-none' className='link' to={'/Packages'}>Our Deals</Link>
+          <Link className='link' to={"/Gift"}>Online Gift</Link>
+        </nav>
+      </div>
+      <div>
+        <Outlet />
+      </div>
+      <div className="footer">
         <div className="website-name-footer">
           Gan Eden Hall
         </div>
@@ -49,11 +49,11 @@ function Layout() {
           made by Amit Barhanin & Daniel Brizel
         </div>
       </div>
-        </div>
+    </div>
 
 
 
-    )
+  )
 }
 
 export default Layout
