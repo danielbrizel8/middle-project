@@ -58,10 +58,10 @@ function LogIn() {
             </div>
           </button>
         </div>
-        <div>
+        <div  className="signup-container">
           {!showSignUp && (
             <div className="signup-link" onClick={handleSignUpClick}>
-              <button className="signup">Not sgin up yet?</button>
+              <button className="signup">Not sign up yet?</button>
             </div>
           )}
           {showSignUp && (

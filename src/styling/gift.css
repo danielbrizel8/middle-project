@@ -4,9 +4,7 @@
 }
 
 .gift-container {
-    /* height: 100vw; */
     display: flex;
-    /* align-items: center; */
     justify-content: space-around;
     background-color: rgb(254, 248, 240);
     padding-bottom: 3vw;
@@ -111,7 +109,6 @@
     background-color: green;
     color: white;
     border-style: none;
-    /* transition: 0.5s; */
 }
 .end-pay-button:hover{
     border-style: solid;

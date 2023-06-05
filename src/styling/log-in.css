@@ -1,150 +1,169 @@
-
 .login-container {
-    height: 70vw;
-    background-size: cover;
-    background-image: url('./../assets/login10.avif');
-    background-repeat: no-repeat;
-    display: flex;
-    flex-direction: column;
-    /* justify-content: center; */
-    align-items: center;
-    background-size: 100% 100%;
-}
-.title-login{
-    text-align: center;
-    font-family: 'Architects Daughter', cursive;
-}
-.inputs-login{
-    display: flex;
-    justify-content: space-around;
-}
-.login-input{
-    width: 18vw;
+  width: 100vw;
+  height: 100vw;
+  background-image: url('./../assets/login10.avif');
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
 }
 
-.error-message{
+.title-login {
+  font-size: 1rem;
+  text-align: center;
+  font-family: 'Architects Daughter', cursive;
+}
+
+.inputs-login {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 1rem;
+}
+
+.login-input {
+  width: 12rem;
+  height: 4rem;
+}
+
+.error-message {
   margin-bottom: 5vw;
   margin-left: 2.5vw;
   font-size: 1.1rem;
 }
-.button-login{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+
+.button-login {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.sign-in-button{
-    border-radius: 10px;
-    margin-bottom: 1vw;
-    height: 3vw;
-    width: fit-content;
-}
+
+
 .sign-in-button {
-    --primary-color: #8d926e;
-    --secondary-color: #fff;
-    --hover-color: #5c7059;
-    --arrow-width: 10px;
-    --arrow-stroke: 2px;
-    box-sizing: border-box;
-    border: 0;
-    border-radius: 20px;
-    color: var(--secondary-color);
-    padding: 1em 1.8em;
-    background: var(--primary-color);
-    display: flex;
-    transition: 0.2s ;
-    align-items: center;
-    gap: 0.6em;
-    font-weight: bold;
-  }
-  
-  .sign-in-button .arrow-wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .sign-in-button .arrow {
-    margin-top: 1px;
-    width: var(--arrow-width);
-    background: var(--primary-color);
-    height: var(--arrow-stroke);
-    position: relative;
-    transition: 0.2s;
-  }
-  
-  .sign-in-button .arrow::before {
-    content: "";
-    box-sizing: border-box;
-    position: absolute;
-    border: solid var(--secondary-color);
-    border-width: 0 var(--arrow-stroke) var(--arrow-stroke) 0;
-    display: inline-block;
-    top: -3px;
-    right: 3px;
-    transition: 0.2s;
-    padding: 3px;
-    transform: rotate(-45deg);
-  }
-  
-  .sign-in-button:hover {
-    background-color: var(--hover-color);
-  }
-  
-  .sign-in-button:hover .arrow {
-    background: var(--secondary-color);
-  }
-  
-  .sign-in-button:hover .arrow:before {
-    right: 0;
-  }
-.log-in-box{
-    background: linear-gradient(135deg, rgba(255,255,255,0.1), rgba(255, 255, 255, 0));
-    -webkit-backdrop-filter: blur(26px);
-    backdrop-filter: blur(20px);
-    box-shadow: 0 8px 32px 0 rgba(0, 0,0 , 0.37);
-    border: 1px solid rgba(255,255,255.0.18);
-    border-radius: 32px;
-    height: 25vw;
-    width: 45vw;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    margin-top: 5vw;
+  --primary-color: #8d926e;
+  --secondary-color: #fff;
+  --hover-color: #5c7059;
+  --arrow-width: 10px;
+  --arrow-stroke: 2px;
+  box-sizing: border-box;
+  border: 0;
+  border-radius: 20px;
+  color: var(--secondary-color);
+  padding: 1em 1.8em;
+  background: var(--primary-color);
+  display: flex;
+  transition: 0.2s;
+  align-items: center;
+  gap: 0.6em;
+  font-weight: bold;
+  height: 2rem;
+  margin-top: 1rem;
+}
+
+.sign-in-button .arrow-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sign-in-button .arrow {
+  margin-top: 1px;
+  width: var(--arrow-width);
+  background: var(--primary-color);
+  height: var(--arrow-stroke);
+  position: relative;
+  transition: 0.2s;
+}
+
+.sign-in-button .arrow::before {
+  content: "";
+  box-sizing: border-box;
+  position: absolute;
+  border: solid var(--secondary-color);
+  border-width: 0 var(--arrow-stroke) var(--arrow-stroke) 0;
+  display: inline-block;
+  top: -3px;
+  right: 3px;
+  transition: 0.2s;
+  padding: 3px;
+  transform: rotate(-45deg);
+}
+
+.sign-in-button:hover {
+  background-color: var(--hover-color);
+}
+
+.sign-in-button:hover .arrow {
+  background: var(--secondary-color);
+}
+
+.sign-in-button:hover .arrow:before {
+  right: 0;
+}
+
+.log-in-box {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+  -webkit-backdrop-filter: blur(26px);
+  backdrop-filter: blur(20px);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  border: 1px solid rgba(255, 255, 255.0.18);
+  border-radius: 32px;
+  width: 35rem;
+  height: 20rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 5vw;
+}
+
+.signup-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 4.4rem;
 }
 
 .form {
-  width: 30vw;
-  height: 35vw;
+  width: 20rem;
+  height: 25rem;
   background-color: white;
   padding: 3.125em;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  box-shadow: 5px 5px 15px -1px rgba(0,0,0,0.75);
+  box-shadow: 5px 5px 15px -1px rgba(0, 0, 0, 0.75);
   position: relative;
   left: 6vw;
+  margin-top: 4rem;
+  margin-right: 5rem;
 }
 
+
+.signup {
+  margin-top: 1rem;
+  margin-left: 4.5rem;
+}
 
 .signup-span {
   color: rgb(77, 75, 75);
   text-transform: uppercase;
   display: block;
-  font-size: 1vw;
+  font-size: 1rem;
   margin-bottom: 2vw;
 }
 
-.signup-link{
+.signup-link {
   display: flex;
   justify-content: center;
   margin-bottom: 5vw;
 }
 
 .form--input {
-  width: 100%;
   margin-bottom: 1.25em;
-  height: 40px;
+  width: 12rem;
+  height: 4rem;
   border-radius: 5px;
   border: 1px solid gray;
   padding: 0.8em;
@@ -163,15 +182,16 @@
   align-items: center;
 }
 
-.form--marketing > input {
+.form--marketing>input {
   margin-right: 0.625em;
 }
 
-.form--marketing > label {
+.form--marketing>label {
   color: grey;
 }
 
-.checkbox, input[type="checkbox"] {
+.checkbox,
+input[type="checkbox"] {
   accent-color: #639;
 }
 
@@ -191,4 +211,28 @@
   border: 1px dashed #639;
   cursor: pointer;
   transition: 0.5s;
+}
+
+@media screen and (max-width: 600px) {
+  .log-in-box {
+    width: 15rem;
+    height: 25rem;
+  }
+
+  .inputs-login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .form {
+    width: 15rem;
+    height: 25rem;
+    margin-top: 5rem;
+  }
+
+  .title-login {
+    font-size: 0.7rem;
+  }
+
 }

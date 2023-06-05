@@ -3,10 +3,6 @@
     box-sizing: border-box;
 }
 
-.home-page-container {
-
-}
-
 
 .left-pair::after {
   content: '';
@@ -57,8 +53,6 @@
     left: 50%;
     height: 120vw;
     border-right: 1px dashed #8b8b98;
-    /* width: 1px; */
-    /* background-color: rgb(61, 61, 61); */
 }
 
 
@@ -86,6 +80,7 @@
   position: absolute;
   grid-template-columns: repeat(2, 45vw);
   grid-template-rows: repeat(2, 60vw);
+  overflow-x: hidden;
 }
 
 .box-details {
@@ -189,8 +184,6 @@
 .about-us-content {
   width: 60vw;
   height: fit-content;
-  /* border-style: solid;
-  border-radius: 10px; */
   text-align: center;
   margin-bottom: 1vw;
   font-size: 1vw;
@@ -282,7 +275,7 @@
   transition-delay: 0.3s;
 }
 
-/* icon style and hover */
+
 #top-button svg {
   width: 20px;
   right: 0;
@@ -304,7 +297,6 @@
 }
 .image-carousle{
   height: 60vw;
-  /* width: 50vw; */
 }
 .image-carousle-div{
   display: flex;
@@ -328,7 +320,6 @@ width: 95%;
 
 @media screen and (max-width: 600px) {
   *{
-    /* overflow-x: hidden; */
     box-sizing: border-box;
   }
   .carousle-divs{
@@ -340,9 +331,6 @@ width: 95%;
   .link-more{
     width: fit-content;
     font-size: 3vw;
-  }
-  .contents-carousle{
-
   }
 }
 
