@@ -2,7 +2,11 @@
     margin: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
+    
 }
+
+
+
 nav{
     display: flex;
     justify-content: space-between;
@@ -12,6 +16,7 @@ nav{
     width:100%;
     font-size: 1.2rem;
     z-index: 3;
+    
 }
 
 .image-logo{
@@ -121,3 +126,41 @@ nav{
   align-items: center;
 }
 
+
+@media screen and (max-width: 800px) {
+  #create-event-none, #hello-none{
+    display: none;
+  }
+  nav{
+    height: 10vw;
+  }
+  
+}
+@media screen and (max-width: 600px) {
+  nav{
+    height: 15vw;
+  }
+  #create-event-none, #about-us-none, #our-deals-none, #hello-user, .website-name-footer{
+    display: none;
+  }
+  
+}
+
+@media screen and (max-width: 450px) {
+  nav{
+    height: 25vw;
+  }
+  .made-by{
+    display: none;
+  }
+  .image-logo{
+    height: 15vw;
+    width: 30vw;
+  }
+  .social-links{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+  }
+  
+}
