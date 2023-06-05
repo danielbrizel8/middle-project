@@ -25,19 +25,7 @@ function Inviation() {
     });
   };
 
-  useEffect(() => {
-    if (weddingDetails.weddingDate != '') {
-      const dateArr = weddingDetails.weddingDate.split('-')
-      console.log(dateArr);
-      dateArr[2] = (dateArr[2] * 1) + 1
-      console.log(dateArr);
-      setUpdateDate(dateArr.join('/'))
-    }
-  }
-    , [])
-
-
-  console.log(currentWedding);
+  
   return (
     <div className="invitation-form" >
       <div id='all-invation' className='main-container'>
@@ -49,7 +37,7 @@ function Inviation() {
              <h1>{currentWedding.wifeName} </h1>
           </div>
           <div id='details'>
-            <h2>Date: {updateDate}</h2>
+            <h2>Date: {currentWedding.weddingDate}</h2>
             <h2>place: Gan Eden</h2>
             <h2>Address: Shaked 2</h2>
             <h2>At: 19:00</h2>

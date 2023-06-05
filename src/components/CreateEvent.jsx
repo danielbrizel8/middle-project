@@ -8,10 +8,8 @@ import './../styling/create-event.css'
 function CreateEvent() {
   const [spouse, setSpouse] = useState()
   const [partner, setPartner] = useState()
-  const [updateDate, setUpdateDate] = useState()
   const [saveData, setSaveData] = useState(false)
   const [removeSaveData, setRemoveSaveData] = useState(false)
-  const [saveDatesArray, setSaveDatesArray] = useState(localStorage.getItem('dates'))
   const { weddingDetails, setWeddingDetails } = useContext(CreateEventContext)
   const navigate = useNavigate()
   const handleDateSave = () => {
@@ -42,17 +40,7 @@ function CreateEvent() {
     navigate('/Inviation')
 
   }
-  useEffect(() => {
-    if (weddingDetails.weddingDate != '') {
-      const dateArr = weddingDetails.weddingDate.split('-')
-      console.log(dateArr);
-      dateArr[2] = (dateArr[2] * 1) + 1
-      console.log(dateArr);
-      setUpdateDate(dateArr.join('/'))
-    }
-  }
-    , [])
-
+  
 
   return (
     <div className="form-container">
@@ -67,7 +55,7 @@ function CreateEvent() {
             <InputLabel>Chosen Date</InputLabel>
             <TextField
               className='responsive-input'
-              value={updateDate}
+              value={weddingDetails.weddingDate}
               InputProps={{
                 readOnly: true,
               }} />
