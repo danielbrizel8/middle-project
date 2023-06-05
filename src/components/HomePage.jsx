@@ -1,20 +1,23 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import './../styling/home-page.css'
 import { Link, useLocation } from 'react-router-dom'
 import Carousle from './Carousle'
 import { motion } from "framer-motion"
 import { useInView } from 'react-intersection-observer';
 import { useAnimation } from 'framer-motion';
+import  Timeline  from './../timeLine.json'
 
 
 function HomePage() {
+
+  const [countTimeLine, setCountTimeLine] = useState(0)
   const { pathname } = useLocation();
   const variants = {
     offscreen: { x: '-20vw', filter: 'blur(7px)' },
-    onscreen: { x: 0,  filter: 'blur(0px)' }
+    onscreen: { x: 0, filter: 'blur(0px)' }
   };
   const variantsRight = {
-    offscreen: { x: '20vw',  filter: 'blur(7px)' },
+    offscreen: { x: '20vw', filter: 'blur(7px)' },
     onscreen: { x: 0, filter: 'blur(0px)' }
   };
   const controls = useAnimation();
@@ -129,48 +132,68 @@ function HomePage() {
                   </div>
                 </div>
               </div>
-          </motion.div>
+            </motion.div>
+          </div>
         </div>
-      </div>
-      <div>
-        <img className='image-couple' src="https://easy2give.co.il/media/images/married-icon.original.png" alt="" />
-      </div>
-      <div className='about-us-section'>
-        <div className='about-us-header'>
-          <h1>About- us</h1>
-        </div>
-        <div className='about-us-content' id='about-us-content'>
-          <h2>Welcome to "Gan Eden", where unforgettable memories are made. With 20 years of experience, we are dedicated to providing an exceptional wedding experience. Our elegant venue, personalized service, and attention to detail ensure your special day is truly magical. Let us be part of your love story and create an extraordinary celebration at "Gan Eden".</h2>
-        </div>
-      </div>
-      <div style={{ maxWidth: 1200, marginLeft: 'auto', marginRight: 'auto', marginTop: 64 }}>
-        <Carousle>
-          <img src="https://www.agadat-deshe.co.il/warehouse/dynamic/274797.jpg" alt="" />
-          <img src="https://www.myday.co.il/wp-content/blogs.dir/2/files/2017/09/DSC_7489-117-1.jpg" alt="" />
-          <img src="https://ein-hemed.co.il/wp-content/uploads/2023/01/AAA_7048.jpg" alt="" />
-          <img src="https://www.easywed.co.il/wp-content/uploads/2019/11/O4A4646-1.jpg" alt="" />
-          <img src="https://www.kellysweet.com/wp-content/uploads/2020/05/Detroit-Michigan-wedding-photographer_59.jpg" alt="" />
-        </Carousle>
-      </div>
-      <button id='top-button' onClick={() => window.scrollTo(0, 0)}>
-        <div className="text">
-          <span>Back</span>
-          <span>to</span>
-          <span>top</span>
-        </div>
-        <div className="clone">
-          <span>Back</span>
-          <span>to</span>
-          <span>top</span>
-        </div>
-        <svg width="20px" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
-          <path strokeLinecap="round" strokeLinejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
-        </svg>
-      </button>
-    </div>
-    </div >
 
-  )
+          <div className='carousle-divs'>
+            <div className="carousle-box" >
+              <div className='image-carousle-div'>
+                <img className="image-carousle" src={Timeline.timeLine[countTimeLine].img} alt="" />
+              </div>
+              <div className="content-time-line contents-carousle">
+                <h1 className='content-title'>{Timeline.timeLine[countTimeLine]['content-title']}</h1>
+                <h3 className='content-paragraph'>{Timeline.timeLine[countTimeLine]['content-paragraph']}</h3>
+                <div className='button-link'>
+                  <Link className='link-more' to={Timeline.timeLine[countTimeLine].to}>{Timeline.timeLine[countTimeLine]['to-content']}</Link>
+                </div>
+                <button onClick={(e) => {countTimeLine != 0 &&  setCountTimeLine(countTimeLine-1)}}>prev</button>
+                <button onClick={(e) => {countTimeLine != 3 && setCountTimeLine(countTimeLine+1)}}>next</button>
+              </div>
+            </div>
+          </div>
+          
+
+  
+          <img className='image-couple' src="https://easy2give.co.il/media/images/married-icon.original.png" alt="" />
+          <div className='about-us-section'>
+            <div className='about-us-header'>
+              <h1>About- us</h1>
+            </div>
+            <div className='about-us-content' id='about-us-content'>
+              <h2>Welcome to "Gan Eden", where unforgettable memories are made. With 20 years of experience, we are dedicated to providing an exceptional wedding experience. Our elegant venue, personalized service, and attention to detail ensure your special day is truly magical. Let us be part of your love story and create an extraordinary celebration at "Gan Eden".</h2>
+            </div>
+          </div>
+          <div style={{ maxWidth: 1200, marginLeft: 'auto', marginRight: 'auto', marginTop: 64 }}>
+            <Carousle>
+              <img src="https://www.agadat-deshe.co.il/warehouse/dynamic/274797.jpg" alt="" />
+              <img src="https://www.myday.co.il/wp-content/blogs.dir/2/files/2017/09/DSC_7489-117-1.jpg" alt="" />
+              <img src="https://ein-hemed.co.il/wp-content/uploads/2023/01/AAA_7048.jpg" alt="" />
+              <img src="https://www.easywed.co.il/wp-content/uploads/2019/11/O4A4646-1.jpg" alt="" />
+              <img src="https://www.kellysweet.com/wp-content/uploads/2020/05/Detroit-Michigan-wedding-photographer_59.jpg" alt="" />
+            </Carousle>
+          </div>
+          <button id='top-button' onClick={() => window.scrollTo(0, 0)}>
+            <div className="text">
+              <span>Back</span>
+              <span>to</span>
+              <span>top</span>
+            </div>
+            <div className="clone">
+              <span>Back</span>
+              <span>to</span>
+              <span>top</span>
+            </div>
+            <svg width="20px" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
+              <path strokeLinecap="round" strokeLinejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+            </svg>
+          </button>
+        </div>
+
+
+      </div >
+
+      )
 }
 
-export default HomePage
+      export default HomePage

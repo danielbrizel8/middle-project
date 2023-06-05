@@ -1,0 +1,33 @@
+{
+    "timeLine": [
+      {
+        "img": "https://images.ctfassets.net/wzm83lc7g93q/5HrYApoPBfKPbw0vHdRDmB/b9e19496fa3b91c88285c19fecfbc6b2/getting_married_in_british_columbia-high.jpg",
+        "content-title": "Pick Your Date",
+        "content-paragraph": "Selecting your dream wedding date is made easy with our interactive tools. Explore venue availability, consider seasonal factors, and ensure a conflict-free celebration.",
+        "to": "/Calendar",
+        "to-content": "Available Dates"
+      },
+      {
+        "img": "https://www.brides.com/thmb/YkPH2kwcnAlO7n6OslSrkOzMDck=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/calendar-eded7d6cce89406fa85aff003a4899ed.jpg",
+        "content-title": "Let's Get Married",
+        "content-paragraph": "Start your journey to a perfect wedding day with us. Our seamless planning tools and expert team make it effortless to bring your dream wedding to life. From venue selection to personalized details, let us guide you every step of the way towards a magical celebration of love at 'Gan Eden'.",
+        "to": "/CreateEvent",
+        "to-content": "Create Event"
+      },
+      {
+        "img": "https://www.womangettingmarried.com/wp-content/uploads/2023/01/wedding-colors-on-table.jpg",
+        "content-title": "Our Deals",
+        "content-paragraph": "Discover extraordinary wedding deals at 'Gan Eden'. From all-inclusive packages to customizable options, our exclusive offers cater to your unique preferences and budget. Choose us for creating unforgettable memories while enjoying exceptional value.",
+        "to": "/Packages",
+        "to-content": "More"
+      },
+      {
+        "img": "https://i.etsystatic.com/32703807/r/il/99b8f3/3493484389/il_1080xN.3493484389_m57u.jpg",
+        "content-title": "Send Invitation",
+        "content-paragraph": "Join us and see how your wedding invitation will look like.",
+        "to": "/Inviation",
+        "to-content": "View Invitation"
+      }
+    ]
+  }
+  
