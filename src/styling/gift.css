@@ -103,6 +103,14 @@
 .save-button{
     cursor: pointer;
     margin-left: 5vw;
+
+    width: 4vw;
+    height: 2vw;
+    border-radius: 10px;
+    background-color: green;
+    color: white;
+    border-style: none;
+
 }
 
 .end-pay-button:hover{
