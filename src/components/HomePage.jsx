@@ -147,8 +147,10 @@ function HomePage() {
                 <div className='button-link'>
                   <Link className='link-more' to={Timeline.timeLine[countTimeLine].to}>{Timeline.timeLine[countTimeLine]['to-content']}</Link>
                 </div>
-                <button onClick={(e) => {countTimeLine != 0 &&  setCountTimeLine(countTimeLine-1)}}>prev</button>
-                <button onClick={(e) => {countTimeLine != 3 && setCountTimeLine(countTimeLine+1)}}>next</button>
+                <div className="buttons-move-arr">
+                <button className='next-prev-button' onClick={(e) => {countTimeLine != 0 &&  setCountTimeLine(countTimeLine-1)}}>prev</button>
+                <button className='next-prev-button' onClick={(e) => {countTimeLine != 3 && setCountTimeLine(countTimeLine+1)}}>next</button>
+                </div>
               </div>
             </div>
           </div>

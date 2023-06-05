@@ -6,22 +6,21 @@ import 'react-calendar/dist/Calendar.css';
 import './../styling/calendar.css'
 
 function CalendarComponent() {
-  const [caughtDates, setCaughtDates] = useState([])
   const navigate = useNavigate()
   const arrayFromLocal = JSON.parse(localStorage.getItem('weddings'))
-  const test = arrayFromLocal.map((obj) => obj.weddingDate)
-  console.log(test);
-    // setCaughtDates([...caughtDates, arrayFromLocal.map((obj) => {obj.weddingDate})])
+  const dates = arrayFromLocal.map((obj) => obj.weddingDate)
+  
   const { weddingDetails, setWeddingDetails } = useContext(CreateEventContext)
-  const caughtDatesTest = ['2023-05-10', '2023-05-15', '2023-05-20'];
   const saveDate = (clickDay) => {
+    const timezoneOffset = clickDay.getTimezoneOffset() * 60000; // Convert minutes to milliseconds
+    const localISOTime = new Date(clickDay - timezoneOffset).toISOString().split('T')[0];
     setWeddingDetails(
       {
         ...weddingDetails,
-        weddingDate: clickDay.toISOString().split('T')[0]
+        weddingDate: localISOTime
       }
     )
-    console.log(weddingDetails);
+    console.log("hii" + localISOTime);
     alert("this date are available")
     navigate('/CreateEvent')
   }
@@ -30,7 +29,7 @@ function CalendarComponent() {
   const tileContent = ({ date }) => {
     const dateISO = date.toISOString().split('T')[0];
 
-    if (test.includes(dateISO)) {
+    if (dates.includes(dateISO)) {
       return (
         <div className="caught-date" />
       );
@@ -50,7 +49,7 @@ function CalendarComponent() {
         className={'calendar-size'}
         locale="en-GB"
         tileContent={tileContent}
-        tileDisabled={({ date }) => test.includes(date.toISOString().split('T')[0])}
+        tileDisabled={({ date }) => dates.includes(date.toISOString().split('T')[0])}
         onClickDay={(day) => saveDate(day)}
       />
       

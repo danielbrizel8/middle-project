@@ -309,6 +309,26 @@
 .carousle-box{
 width: 95%;
 }
+.buttons-move-arr{
+  display: flex;
+  justify-content: space-around;
+}
+
+.next-prev-button{
+    background-color: rgb(237, 206, 173);
+    color: rgb(103, 103, 103);
+    border-radius: 20%;
+    width: 3rem;
+    height: 1.5rem;
+    border-style: none;
+}
+
+.next-prev-button:hover{
+    background-color: rgba(237, 206, 173, 0.749);
+    color: rgb(73, 73, 73);
+}
+
+
 
 
 
