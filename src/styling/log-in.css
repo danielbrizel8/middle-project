@@ -1,6 +1,6 @@
 
 .login-container {
-    height: 100vw;
+    height: 70vw;
     background-size: cover;
     background-image: url('./../assets/login10.avif');
     background-repeat: no-repeat;
@@ -12,6 +12,7 @@
 }
 .title-login{
     text-align: center;
+    font-family: 'Architects Daughter', cursive;
 }
 .inputs-login{
     display: flex;
