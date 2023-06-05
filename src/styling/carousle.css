@@ -23,6 +23,7 @@
     scrollbar-width: none;
 }
 
+
 .carousel-content::-webkit-scrollbar,
 .carousel-content::-webkit-scrollbar {
     display: none;
