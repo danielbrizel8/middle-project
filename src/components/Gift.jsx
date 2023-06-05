@@ -58,7 +58,6 @@ function Gift() {
   }
   function handleDate(e) {
     setChosenDate(e.target.value)
-
     setChosenWedding(localData.find((wedding) => chosenDate == wedding.weddingDate))
     setCheckDate(false)
 
@@ -135,7 +134,7 @@ function Gift() {
               <div className="short-input-card">
                 <input placeholder='Exp Date' maxLength="5" className='exp-date-input' type="text" onChange={(e) => setCardExp(e.target.value)} />
                 <input placeholder='CVC' maxLength="3" className='cvc-number' type="text" onChange={(e) => setCardCVC(e.target.value)} />
-                <input className='end-pay-button' type="submit" value="Send" />
+                <input className='save-button' type="submit" value="Send" />
               </div>
               <div className='input-none'>
                 <input type="text" name='user_email' value={email}  />

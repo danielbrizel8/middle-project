@@ -4,6 +4,7 @@
 }
 
 
+
 .left-pair::after {
   content: '';
   display: block;
@@ -292,11 +293,12 @@
 .carousle-divs
 {
   flex-direction: column;
-  height: 90vw;
+  height: 95vw;
   display: none;
 }
 .image-carousle{
   height: 60vw;
+
 }
 .image-carousle-div{
   display: flex;
@@ -320,6 +322,7 @@ width: 95%;
 
 @media screen and (max-width: 600px) {
   *{
+
     box-sizing: border-box;
   }
   .carousle-divs{
@@ -332,6 +335,12 @@ width: 95%;
     width: fit-content;
     font-size: 3vw;
   }
+
+  .about-us-content {
+    font-size: 2.0vw;
+   
+  }
+
 }
 
 @media screen and (max-width: 420px) {
@@ -368,5 +377,6 @@ width: 95%;
   .link-more{
     font-size: 3vw;
   }
+  
 
 }
