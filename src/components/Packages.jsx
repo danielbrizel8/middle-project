@@ -1,5 +1,5 @@
 import React from 'react'
-import './../styling/Packages.css'
+import './../styling/packages.css'
 
 function Packages() {
   return (
