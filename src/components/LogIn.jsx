@@ -3,9 +3,13 @@ import './../styling/log-in.css';
 import { useForm } from "react-hook-form";
 import { useNavigate } from 'react-router';
 import { TextField } from '@mui/material';
+import { ErrorMessage } from '@hookform/error-message';
 import users from './../usersData.json';
 
 function LogIn() {
+  const { register, formState: { errors }, handleSubmit ,  getValues} = useForm();
+  const onSubmit = data => {setShowSignUp(!setShowSignUp);   alert('Registration successful!');
+};
   const navigate = useNavigate();
   console.log(users);
   const [usersData, setUsersData] = useState();
@@ -35,8 +39,17 @@ function LogIn() {
     console.log(checkUser);
   };
 
+  const validatePassword = (value) => {
+    const { password } = getValues();
+    if (value === password) {
+      return true;
+    } else {
+      return "Passwords do not match";
+    }
+  };
+
   const handleSignUpClick = () => {
-    setShowSignUp(true); 
+    setShowSignUp(true);
   };
 
   return (
@@ -65,21 +78,25 @@ function LogIn() {
             </div>
           )}
           {showSignUp && (
-            <form className="form">
+            <form className='form' onSubmit={handleSubmit(onSubmit)}>
               <span className="signup-span">Sign Up</span>
-              <input type="email" placeholder="Email address" className="form--input" />
-              <input type="password" placeholder="Password" className="form--input" />
-              <input type="password" placeholder="Confirm password" className="form--input" />
+              <input type="text" placeholder="Enter Username" className="form--input"  {...register("userName", { required: "user name required" })} />
+              <input type="password" placeholder="Password" className="form--input" {...register("password", { required: true })} />
+              <input type="password" placeholder="Confirm password" className="form--input"  {...register("cPass", { required: true, validate: validatePassword })} />
 
               <div className="form--marketing">
-                <input id="okayToEmail" type="checkbox" />
-                <label htmlFor="okayToEmail" className="checkbox">
-                  I want to join the newsletter
-                </label>
+                <ErrorMessage
+                  errors={errors}
+                  name="userName"
+                  render={({ message }) => <p>{message}</p>}
+                />
+                <ErrorMessage
+                  errors={errors}
+                  name="cPass"
+                  render={({ message }) => <p>{message}</p>}
+                />
               </div>
-              <button className="form--submit">
-                Sign up
-              </button>
+              <input className="form--submit" type="submit" />
             </form>
           )}
         </div>
