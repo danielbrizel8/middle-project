@@ -44,7 +44,7 @@ function Packages() {
         <div className="book">
           <div className='peckage-style' id='all-inclusive'>
             <p> <u>Hall:</u> A beautiful banquet hall in a premium hotel or designated event venue.</p>
-            <p> <u>Food:</u> a three-course gourmet meal with a variety of options for starters, main courses and desserts. Customizable menu to accommodate dietary restrictions.</p>
+            <p> <u>Food:</u> a three-course gourmet meal with a variety of options for starters, main courses and desserts.</p>
             <p> <u>Alcohol:</u> open bar service with a selection of premium spirits, wines and beers for the entire event.</p>
             <p> <u>DJ: </u> Professional DJ services with a wide variety of musical genres and a quality sound system.</p>
             <p> <u>Photographer:</u> an experienced wedding photographer throughout the event, taking candid moments and official photos.</p>

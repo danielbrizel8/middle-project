@@ -41,14 +41,14 @@ function Inviation() {
   return (
     <div className="invitation-form" >
       <div id='all-invation' className='main-container'>
-        <div className='front-side' style={{ backgroundImage: `url(${FrontImg})` }}>          <h2>we invite you to celebrate our wedding</h2>
-          <div className='heart-bg'> <img src={Heart} alt="" style={{ position: "absolute", height: "26vw", width: "33vw", top: "15vw", left: "11vw" }} />
-            <div className='main-part'>
-              <h1>{`${currentWedding.husbandName} & ${currentWedding.wifeName}`} </h1>
-            </div>
+        <div className='front-side' style={{ backgroundImage: `url(${FrontImg})` }}>
+          <h2>we invite you to celebrate our wedding</h2>
+          <div className='main-part'>
+            <h1>{currentWedding.husbandName}</h1>
+             <h1>&</h1>
+             <h1>{currentWedding.wifeName} </h1>
           </div>
-
-          <div className='details'>
+          <div id='details'>
             <h2>Date: {updateDate}</h2>
             <h2>place: Gan Eden</h2>
             <h2>Address: Shaked 2</h2>
@@ -57,9 +57,9 @@ function Inviation() {
         </div>
 
 
-        <div className='front-side' style={{ backgroundImage: `url(${BackImg})` }}>
+        <div className='back-side' style={{ backgroundImage: `url(${BackImg})` }}>
           <h2>we invite you to celebrate our wedding</h2>
-          <h1>Schedule:</h1>
+          <h1><u>Schedule:</u></h1>
           <p>Welcoming- 19:00</p>
           <p> Ceremony- 20:00</p>
           <p> Dinner- 20:30</p>
@@ -70,7 +70,7 @@ function Inviation() {
         </div>
       </div>
       <div className="download-div">
-        <button onClick={handleDownload}>download</button>
+        <button className='download-btn' onClick={handleDownload}>download</button>
       </div>
     </div>
   )
