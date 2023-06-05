@@ -36,7 +36,7 @@ function LogIn() {
   };
 
   const handleSignUpClick = () => {
-    setShowSignUp(true); // Set showSignUp to true when the sign-up link/button is clicked
+    setShowSignUp(true); 
   };
 
   return (
