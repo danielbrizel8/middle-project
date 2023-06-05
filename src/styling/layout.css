@@ -106,4 +106,18 @@ nav{
 #hello-user> img{
   margin-right: 0.5vw;
 }
+.layout-container{
+  display: flex;
+  flex-direction: column;
+}
+
+.footer{
+  height: 60px;
+  background-color: rgba(56, 55, 55, 0.747);
+  color: white;
+  font-family: 'Alkatra', cursive;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
 
