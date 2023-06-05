@@ -1,14 +1,13 @@
 
 .login-container {
-    height: 70vw;
+    height: 100vw;
+    width: 100vw;
     background-size: cover;
     background-image: url('./../assets/login10.avif');
     background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
     align-items: center;
-    background-size: 100% 100%;
 }
 .title-login{
     text-align: center;

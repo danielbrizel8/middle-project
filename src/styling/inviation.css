@@ -8,7 +8,6 @@
 }
 
 .invitation-form{
-    height: 50vw;
     background-color: rgb(254, 248, 240);
 }
 
@@ -18,16 +17,6 @@
     justify-content: space-evenly; 
 }
 
-.heart-bg{
-    /* background-image: url('../assets/heart-back-removebg-preview.png'); */
-    background-repeat: no-repeat;
-    /* width: 15vw;
-    height: 15vw; */
-    background-size: contain;
-    display: flex;
-    justify-content: center;
-
-}
 
 .front-side{
     border-style: solid;
@@ -41,7 +30,6 @@
     text-align: center;
     justify-content: space-between;
     flex-direction: column;
-    /* background-image: url("https://media.istockphoto.com/id/917171252/photo/eucalyptus-leaves-on-white-background-flat-lay-top-view.jpg?s=612x612&w=0&k=20&c=-YrxM5YFxVQOi_3RIeqBorvQQS04Afz4pMuTeLEvzdM="); */
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }
