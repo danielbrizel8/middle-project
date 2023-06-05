@@ -1,10 +1,12 @@
 * {
     margin: 0;
     box-sizing: border-box;
+    
 }
 
 .home-page-container {
-    height: 100vh;
+  height: 306vw;
+    
 
 }
 
@@ -13,8 +15,7 @@
   display: block;
   position: relative;
   width: 5vw;
-  height: 0.1vw;
-  background-color: black;
+  border-top: 1px dashed #8b8b98;
   bottom: 40%;
   left:89%;
  
@@ -57,8 +58,9 @@
     position: relative;
     left: 50%;
     height: 120vw;
-    width: 1px;
-    background-color: rgb(61, 61, 61);
+    border-right: 1px dashed #8b8b98;
+    /* width: 1px; */
+    /* background-color: rgb(61, 61, 61); */
 }
 
 .time-line-title {
@@ -106,7 +108,7 @@
   position: relative;
   width: 5vw;
   height: 0.1vw;
-  background-color: black;
+  border-top: 1px dashed #8b8b98;
   bottom: -50%;
   right:0%;
  
