@@ -16,6 +16,7 @@
 
 }
 
+
 .home-page-image {
   height: 45vw;
   background-image: url('https://w0.peakpx.com/wallpaper/173/355/HD-wallpaper-just-married-married-people-happiness-love-man-woman-couple.jpg');
@@ -167,7 +168,7 @@
 }
 
 .about-us-section {
-  width: 100vw;
+  width: 100%;
   background-color: rgb(254, 248, 240);
   display: flex;
   justify-content: center;

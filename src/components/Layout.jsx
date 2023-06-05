@@ -14,9 +14,13 @@ function Layout() {
       <div>
         <nav className='nav-bar'>
           <Link className='logo' to={"HomePage"}><img className='image-logo' src={Logo} alt="" /> </Link>
-          <div id='hello-user'>
-            <img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/newlyweds.png" alt="newlyweds" />
-            <div  >Hello {localStorage.getItem('user')}</div>
+          <div className="user-name-log">
+            <div id='hello-user'>
+              <img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/newlyweds.png" alt="newlyweds" />
+              <div  >Hello {localStorage.getItem('user')}
+              </div>
+            </div>
+              <Link to={''}><img width="20" height="20" src="https://img.icons8.com/ios/50/exit--v1.png" alt="exit--v1"/></Link>
           </div>
           <Link id='about-us-none' className='link' to={"HomePage/about"} >About- us</Link>
           <Link className='link' to={'/Calendar'}>Available Dates</Link>
