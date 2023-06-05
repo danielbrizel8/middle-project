@@ -6,6 +6,7 @@ import Logo from './../assets/logo.png'
 
 
 function Layout() {
+
   const [openNav, setOpenNav] = useState(false)
 
   return (
@@ -50,7 +51,6 @@ function Layout() {
         </div>
       </div>
     </div>
-
 
 
   )

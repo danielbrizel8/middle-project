@@ -59,7 +59,7 @@ function CreateEvent() {
       <div className='create-event-form'>
         <div className='names-couple'>
           <TextField className='responsive-input' label="Spouse name" onChange={(e) => { setSpouse(e.target.value) }} />
-          <TextField className='responsive-input' label="Partner name" onChange={(e) => { setPartner(e.target.value) }} />
+          <TextField className='responsive-input' id='partner-input' label="Partner name" onChange={(e) => { setPartner(e.target.value) }} />
         </div>
         <br />
         <div className="date-event">
@@ -79,7 +79,7 @@ function CreateEvent() {
         </div>
         <div className="buttons-container">
          { !removeSaveData && <button className='save-button' onClick={handleDateSave}>Save</button> }
-          {saveData && <button onClick={handleNavigate} class="cta">
+          {saveData && <button onClick={handleNavigate} className="cta">
             <span>To Invation</span>
             <svg viewBox="0 0 13 10" height="10px" width="15px">
               <path d="M1,5 L11,5"></path>

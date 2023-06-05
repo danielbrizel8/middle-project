@@ -1,11 +1,10 @@
 * {
-
     margin: 0;
     box-sizing: border-box;
 }
 
 .home-page-container {
-  
+
 }
 
 
@@ -48,7 +47,6 @@
   height: 120vw;
   width: 90vw;
   background-color: rgb(254, 248, 240);
-  
 
 }
 
@@ -319,11 +317,15 @@ width: 95%;
 }
 
 
+
 @media screen and (min-width: 1000px) {
   .time-line-container {
     font-size: calc(1.5vw - 6px);
   }
 }
+
+
+
 @media screen and (max-width: 600px) {
   *{
     /* overflow-x: hidden; */
@@ -348,6 +350,7 @@ width: 95%;
   .carousle-box{
     height: 92vw;
   }
+
   .image-text {
     text-align: center;
     font-size: 2.7vw;
@@ -357,7 +360,6 @@ width: 95%;
     font-size: 2.2vw;
     text-align: center;
   }
-
 
   .content-paragraph{
     font-size: 3vw;
@@ -378,5 +380,5 @@ width: 95%;
   .link-more{
     font-size: 3vw;
   }
-  
+
 }
