@@ -12,6 +12,7 @@ function LogIn() {
   const [userName, setUserName] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
+  const [showSignUp, setShowSignUp] = useState(false); // State variable to control the visibility of the sign-up form
 
   useEffect(() => {
     setUsersData(users.users);
@@ -34,6 +35,10 @@ function LogIn() {
     console.log(checkUser);
   };
 
+  const handleSignUpClick = () => {
+    setShowSignUp(true); // Set showSignUp to true when the sign-up link/button is clicked
+  };
+
   return (
     <div className='login-container'>
       <div className="log-in-box">
@@ -52,6 +57,31 @@ function LogIn() {
               <div className="arrow"></div>
             </div>
           </button>
+        </div>
+        <div>
+          {!showSignUp && (
+            <div className="signup-link" onClick={handleSignUpClick}>
+              <button className="signup">Not sgin up yet?</button>
+            </div>
+          )}
+          {showSignUp && (
+            <form className="form">
+              <span className="signup-span">Sign Up</span>
+              <input type="email" placeholder="Email address" className="form--input" />
+              <input type="password" placeholder="Password" className="form--input" />
+              <input type="password" placeholder="Confirm password" className="form--input" />
+
+              <div className="form--marketing">
+                <input id="okayToEmail" type="checkbox" />
+                <label htmlFor="okayToEmail" className="checkbox">
+                  I want to join the newsletter
+                </label>
+              </div>
+              <button className="form--submit">
+                Sign up
+              </button>
+            </form>
+          )}
         </div>
       </div>
     </div>
