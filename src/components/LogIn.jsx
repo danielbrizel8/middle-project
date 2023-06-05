@@ -81,8 +81,8 @@ function LogIn() {
             <form className='form' onSubmit={handleSubmit(onSubmit)}>
               <span className="signup-span">Sign Up</span>
               <input type="text" placeholder="Enter Username" className="form--input"  {...register("userName", { required: "user name required" })} />
-              <input type="password" placeholder="Password" className="form--input" {...register("password", { required: true })} />
-              <input type="password" placeholder="Confirm password" className="form--input"  {...register("cPass", { required: true, validate: validatePassword })} />
+              <input type="password" placeholder="Password" className="form--input" {...register("password", { required: "recuired password" })} />
+              <input type="password" placeholder="Confirm password" className="form--input"  {...register("cPass", { required: "recuired confirm", validate: validatePassword })} />
 
               <div className="form--marketing">
                 <ErrorMessage

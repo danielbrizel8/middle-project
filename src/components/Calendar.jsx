@@ -8,7 +8,7 @@ import './../styling/calendar.css'
 function CalendarComponent() {
   const navigate = useNavigate()
   const arrayFromLocal = JSON.parse(localStorage.getItem('weddings'))
-  const dates = arrayFromLocal.map((obj) => obj.weddingDate)
+  const dates = arrayFromLocal.map((obj) => obj.weddingArr)
   
   const { weddingDetails, setWeddingDetails } = useContext(CreateEventContext)
   const saveDate = (clickDay) => {
@@ -17,7 +17,8 @@ function CalendarComponent() {
     setWeddingDetails(
       {
         ...weddingDetails,
-        weddingDate: localISOTime
+        weddingDate: localISOTime,
+        weddingArr:  clickDay.toISOString().split('T')[0]
       }
     )
     console.log("hii" + localISOTime);
@@ -37,6 +38,8 @@ function CalendarComponent() {
 
     return null;
   };
+
+  
 
 
   return (
